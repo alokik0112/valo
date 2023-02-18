@@ -1,12 +1,179 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
-
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 
 
 /* hero video */
 *, :after, :before {
     box-sizing: border-box;
 }
+
+/*nav */
+
+
+/* Add a black background color to the top navigation */
+.topnav1 {
+    background-color: #111;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.25);
+    /* overflow: hidden; */
+    font-family: "FF Mark W05", Arial, sans-serif;
+    font-weight: bold;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    z-index:1;
+
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav1 a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    
+    
+  }
+  .ele{
+    align-items: center;
+    justify-content: center;
+    height:80px;
+    margin:13px;
+    text-transform: uppercase;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    /* background-color: #04AA6D; */
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav1 .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown1 {
+    float: left;
+    overflow: hidden;
+   
+  }
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown1 .dropbtn1 {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold; 
+    font-size: 13px;
+    letter-spacing: 0.08em;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #292929;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content1 a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav1 a:hover, .dropdown1:hover .dropbtn1 {
+    background-color: #292929;
+    color: white;
+    border-radius: 2px 2px 0px 0px;
+    /* height: 4px; */
+    bottom:30px;
+
+  }
+  .topnav1 a:hover{
+    border-bottom: 3px solid rgb(255, 70, 85);
+    
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content1 a:hover {
+    background-color: rgba(128, 128, 128, 0.788);
+    color:white;
+    border-bottom: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown1:hover .dropdown-content1 {
+    display: block;
+    border-top: 3px solid rgb(255, 70, 85);
+    z-index:2;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .topnav1 a:not(:first-child), .dropdown1 .dropbtn1 {
+      display: none;
+    }
+    .topnav1 a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav1.responsive {position: relative;}
+    .topnav1.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav1.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav1.responsive .dropdown1 {float: none;}
+    .topnav1.responsive .dropdown-content1 {position: relative;}
+    .topnav1.responsive .dropdown1 .dropbtn1 {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+
+  /*riot */
+  
+
+
 /* #homePageVideo {
     height:100%;
     width:100%;
@@ -15,7 +182,7 @@
   } */
 
   .home-hero{
-    padding: 0 5%;
+    padding: 0;
     height: auto;
     width: 100%;
     position: relative;
@@ -23,36 +190,25 @@
     display: block;
   }
 
-  .home-hero:before{
+  /* .home-hero:before{
     pointer-events: none;
     right: 0;
     left: 0;
     background-color: #0f1923;
     content: "";
-    display: block;@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+    display: block; */
+
 
 
 
 /* hero video */
-*, :after, :before {
-    box-sizing: border-box;
-}
+
 /* #homePageVideo {
     height:100%;
     width:100%;
     object-fit: cover;
     object-position: center;
   } */
-
-  .home-hero{
-    padding: 0 5%;
-    height: auto;
-    width: 100%;
-    position: relative;
-    overflow-x: hidden;
-    display: block;
-  }
 
   .home-hero:before{
     pointer-events: none;
@@ -222,6 +378,158 @@ button:active {
 .btn-cont:hover {
     background-position: left bottom;
 }
+
+
+/*
+ news */
+
+ .news-sec{
+    overflow: visible;
+    position: relative;
+    background-color:#ece8e1;
+ }
+ .news-sec:before{
+    content: "";
+    display: block;
+    font-size: 5rem;
+    height: 0;
+    position: absolute;
+    top: -1em;
+    width: 1em;
+    z-index: 2;
+ }
+
+ .news-sec:after{
+    content: "";
+    display: block;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+ }
+ @media (min-width:1024px){
+    .news-sec{
+        padding-bottom: 5vw;
+        padding-top: 0;
+    }
+    .news-sec:before{
+    border-left: 0 solid transparent;
+    border-right: 1em solid transparent;
+    border-bottom: 1em solid #ece8e1;
+    left: 0;
+    height: 0;
+    top: -1em;
+    width: 1em;
+    }
+
+    .news-sec:after{
+        left: 7.3%;
+        border-left: 1px solid rgba(9,9,9,.4);
+    }
+
+
+ }
+
+ .bckgtext{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+ }
+
+ .bgtext{
+    transform: translateY(-9.82823px);
+    text-transform: uppercase;
+    left: 0;
+    padding: 0;
+    -webkit-text-stroke-color: #dbd8d2;
+    margin: 0;
+    font-family: DINNextW05-Bold,arial,georgia,sans-serif;
+    font-size: 32.5vw;
+    line-height: .82;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    /* -webkit-text-stroke-color: #212932; */
+    font-weight: 400;
+ }
+ /* h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+} */
+@media (min-width:1024px){
+    .bgtext{
+        font-size: 22.65vw;
+    }
+    .news-title{
+        font-size: 12rem;
+    }
+}
+@media (min-width:768px){
+    .bgtext{
+        font-size: 26vw;
+    }
+    .news-title{
+        font-size: 10rem;
+    line-height: .86;
+    }
+}
+.bgtext>span:first-child{
+    margin-left: -.12em;
+}
+.bgtext>span{
+    display:block;
+}
+.bgtext>span:nth-child(2){
+    margin-left: .9em;
+}
+
+.details-box{
+    padding: 0;
+    margin: 0 auto;
+    height: auto;
+    max-width: 123rem;
+    position: relative;
+    width: 100%;
+    margin-left:100px;
+    width:1170px;
+}
+.news-title{
+    -webkit-transform: translateY(23%);
+    transform: translateY(23%);
+    color: #ff4655;
+    z-index: 1;
+    padding: .1em 0;
+    /* font-family: Tungsten-Bold,arial,georgia,sans-serif; */
+    font-family: 'Bebas Neue', cursive;
+    font-weight:bolder;
+    display: block;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.news-title>span{
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    width: 100%;
+    display: inline-block;
+}
+
+
+
 
 /* we are valorant */
 
